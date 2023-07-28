@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'site_avito.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.sqlite3', # Эта настройка отвечает за движок, на котором будет работать база данных
+        'NAME': BASE_DIR / 'db.sqlite3', # В этой настройке указывается путь к базе данных
     }
 }
 
