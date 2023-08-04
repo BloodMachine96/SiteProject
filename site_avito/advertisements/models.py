@@ -18,7 +18,7 @@ class Advertisement(models.Model):
             return format_html("<span style='color: red'>Сегодня в {}</span>", created_time)
         return self.created_at
     
-    @admin.display(description="Дата создания")
+    @admin.display(description="Дата обновления")
     def updated_date(self):
         from django.utils import timezone
         if self.updated_at.date() == timezone.now().date():
